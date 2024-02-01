@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-K2IRLC1.DW2023.sa1"
+  DTS:DTSID="{0D026C3F-CC12-4EC2-961E-228742894E07}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-K2IRLC1;User ID=sa;Initial Catalog=DW2023;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-ETL2023-{0D026C3F-CC12-4EC2-961E-228742894E07}DESKTOP-K2IRLC1.DW2023.sa1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxFp+WanGRUC9PnNu46Tm0QAAAAACAAAAAAAQZgAAAAEAACAAAACsJGiGAxl0Y2FZLVBOynLkD37p3YXqjCjI4TwJ5kMCeAAAAAAOgAAAAAIAACAAAADrjSJMg1/IbfR7Xiiw6IMMv07qnLhELMLxfsi8D1I4QYAAAACMB7FtH2y/f9sHlnsM2eUGBnI/605vjiXQJSISSjk1ktzUggvzxQx82Wb2Xv6AoTo+OFgBNPbDWw5Jf2vVsE9xcL1r3ZTiyYrn/0ME9Gv35CitBsCvcbspcWPOIgz85OHvzGPO+HDjxEIe4HpycjhsWSSdHuJmy/eLFmo+sFsh3UAAAACRd4NLH8fhYYXlmQXbeh/Hae3hnCDpteLoGf7CMVwk4H08aY5udJLu06ReuKklgTB/jLhFEyseWphEXVe3N/oM</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

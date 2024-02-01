@@ -1,0 +1,214 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cd1b35f9-e209-4de6-9e79-412bbcfd4103" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW2023</ID>
+  <Name>DW2023</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DW2023</DataSourceID>
+  <Schema>
+    <xs:schema id="DW2023" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DW2023" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d48f3207-9279-4bbc-a340-90f26d1adc3e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="DW_Dimension_Zona" msprop:DbTableName="Dimension_Zona" msprop:FriendlyName="Dimension_Zona" msprop:TableType="Table" msprop:DbSchemaName="DW" msprop:design-time-name="f37ce992-c137-4b04-85a9-6a624d68f928">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_ZONAKEY" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="COD_ZONAKEY" msprop:DbColumnName="COD_ZONAKEY" msprop:design-time-name="bf86a313-efc6-490d-be52-33d98b12c5de" type="xs:int" />
+                  <xs:element name="DISTRITO_ID" msprop:FriendlyName="DISTRITO_ID" msprop:DbColumnName="DISTRITO_ID" msprop:design-time-name="944c0596-1070-412b-8278-247e0bb22c36" type="xs:int" minOccurs="0" />
+                  <xs:element name="ZONA" msprop:FriendlyName="ZONA" msprop:DbColumnName="ZONA" msprop:design-time-name="3ea85dd3-f1ba-4367-ac77-967f9478812d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FECHA_INICIAL" msprop:FriendlyName="FECHA_INICIAL" msprop:DbColumnName="FECHA_INICIAL" msprop:design-time-name="b2f683f5-8ce9-4ce1-8201-cb7bd356e6a1" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="FECHA_FINAL" msprop:FriendlyName="FECHA_FINAL" msprop:DbColumnName="FECHA_FINAL" msprop:design-time-name="aa8e577f-e6d8-4486-9ca2-3ab149a87ef6" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_Hechos_Atencion" msprop:DbTableName="Hechos_Atencion" msprop:FriendlyName="Hechos_Atencion" msprop:TableType="Table" msprop:DbSchemaName="DW" msprop:design-time-name="d7c5c365-8c64-4717-9d1d-e9986047e712">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_ZONAKEY" msprop:FriendlyName="COD_ZONAKEY" msprop:DbColumnName="COD_ZONAKEY" msprop:design-time-name="2b4644e2-9eed-46a1-8c6e-22d042fd0709" type="xs:int" />
+                  <xs:element name="COD_CODIGOKEY" msprop:FriendlyName="COD_CODIGOKEY" msprop:DbColumnName="COD_CODIGOKEY" msprop:design-time-name="7197d4ca-f58e-4b7a-a757-f65cbee30242" type="xs:int" />
+                  <xs:element name="COD_CLASIFICADORKEY" msprop:FriendlyName="COD_CLASIFICADORKEY" msprop:DbColumnName="COD_CLASIFICADORKEY" msprop:design-time-name="f376cf97-a2e9-46db-9c9f-c5cabe1c1bb2" type="xs:int" />
+                  <xs:element name="FECHAKEY" msprop:FriendlyName="FECHAKEY" msprop:DbColumnName="FECHAKEY" msprop:design-time-name="f9b4250a-ea10-4266-995d-1407524590c3" type="xs:int" />
+                  <xs:element name="CANTIDAD_LLAMADAS" msprop:FriendlyName="CANTIDAD_LLAMADAS" msprop:DbColumnName="CANTIDAD_LLAMADAS" msprop:design-time-name="d1e00406-4bda-425b-88ad-20ece12b1d4e" type="xs:double" />
+                  <xs:element name="LATITUD" msprop:FriendlyName="LATITUD" msprop:DbColumnName="LATITUD" msprop:design-time-name="fa2a1643-3855-430c-8001-cb95073b110d" type="xs:float" minOccurs="0" />
+                  <xs:element name="LONGITUD" msprop:FriendlyName="LONGITUD" msprop:DbColumnName="LONGITUD" msprop:design-time-name="7ce636de-3b1f-4d9f-967e-b830c57b20ac" type="xs:float" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_Dimension_Clasificador" msprop:DbTableName="Dimension_Clasificador" msprop:FriendlyName="Dimension_Clasificador" msprop:TableType="Table" msprop:DbSchemaName="DW" msprop:design-time-name="6b758f78-6775-4def-b3e9-dd1a4fe8b434">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_CLASIFICADORKEY" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="COD_CLASIFICADORKEY" msprop:DbColumnName="COD_CLASIFICADORKEY" msprop:design-time-name="4a527a5a-0636-43c7-9cf3-a70e9d22561c" type="xs:int" />
+                  <xs:element name="CLASIFICADOR_ID" msprop:FriendlyName="CLASIFICADOR_ID" msprop:DbColumnName="CLASIFICADOR_ID" msprop:design-time-name="223e7638-aa2c-40c3-9eeb-6a6237105e2d" type="xs:int" minOccurs="0" />
+                  <xs:element name="CLASIFICADOR" msprop:FriendlyName="CLASIFICADOR" msprop:DbColumnName="CLASIFICADOR" msprop:design-time-name="895afe36-3c3c-42a8-988d-62aeac0de5d9">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2147483647" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FECHA_INICIAL" msprop:FriendlyName="FECHA_INICIAL" msprop:DbColumnName="FECHA_INICIAL" msprop:design-time-name="708cba7b-98b0-438b-a7f6-c62bd92dc373" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="FECHA_FINAL" msprop:FriendlyName="FECHA_FINAL" msprop:DbColumnName="FECHA_FINAL" msprop:design-time-name="5067552a-0dc2-477d-9d10-09911a064db6" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_Dimension_Codigo" msprop:DbTableName="Dimension_Codigo" msprop:FriendlyName="Dimension_Codigo" msprop:TableType="Table" msprop:DbSchemaName="DW" msprop:design-time-name="60432e98-7b03-435d-b889-823ffc6af517">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_CODIGOKEY" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="COD_CODIGOKEY" msprop:DbColumnName="COD_CODIGOKEY" msprop:design-time-name="7330f675-79b9-4ad9-b4c1-624076628efa" type="xs:int" />
+                  <xs:element name="CODIGO_ID" msprop:FriendlyName="CODIGO_ID" msprop:DbColumnName="CODIGO_ID" msprop:design-time-name="7fb9cc4f-d6bc-4e03-a71d-0cff93b12804" type="xs:int" minOccurs="0" />
+                  <xs:element name="CODIGO_COLOR" msprop:FriendlyName="CODIGO_COLOR" msprop:DbColumnName="CODIGO_COLOR" msprop:design-time-name="636eeea5-4e57-4e51-9256-1c2de549b6de">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FECHA_INICIAL" msprop:FriendlyName="FECHA_INICIAL" msprop:DbColumnName="FECHA_INICIAL" msprop:design-time-name="73bc16e1-cb8c-4af6-aed3-205814743d2e" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="FECHA_FINAL" msprop:FriendlyName="FECHA_FINAL" msprop:DbColumnName="FECHA_FINAL" msprop:design-time-name="a02732ce-692b-4d5b-9825-0d1ab44386e8" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_Dimension_Tiempo" msprop:DbTableName="Dimension_Tiempo" msprop:FriendlyName="Dimension_Tiempo" msprop:TableType="Table" msprop:DbSchemaName="DW" msprop:design-time-name="c9a5947c-0b49-403a-8972-cf71a1b539bd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FECHAKEY" msprop:FriendlyName="FECHAKEY" msprop:DbColumnName="FECHAKEY" msprop:design-time-name="6d399f3f-caea-4c98-97c3-2e02c0fec62a" type="xs:int" />
+                  <xs:element name="FECHA" msprop:FriendlyName="FECHA" msprop:DbColumnName="FECHA" msprop:design-time-name="c47a3bfc-528d-4f95-a76d-155fc8aeaf51" type="xs:dateTime" />
+                  <xs:element name="ANIO" msprop:FriendlyName="ANIO" msprop:DbColumnName="ANIO" msprop:design-time-name="06ee5b4e-6d9c-4f53-ba3c-6f43ccc41c16" type="xs:short" />
+                  <xs:element name="SEMESTRE" msprop:FriendlyName="SEMESTRE" msprop:DbColumnName="SEMESTRE" msprop:design-time-name="b810cb9d-1bdf-46eb-ad4c-69dc8dde14fa" type="xs:short" />
+                  <xs:element name="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" msprop:DbColumnName="TRIMESTRE" msprop:design-time-name="a72bc85e-eccb-4285-a986-0272daa6bb42" type="xs:short" />
+                  <xs:element name="MES" msprop:FriendlyName="MES" msprop:DbColumnName="MES" msprop:design-time-name="5f8dfe34-49f2-4e83-bc05-d4c33369e7e8" type="xs:short" />
+                  <xs:element name="SEMANA" msprop:FriendlyName="SEMANA" msprop:DbColumnName="SEMANA" msprop:design-time-name="d16ab0ca-d756-48fb-ad12-e558703a6f63" type="xs:short" />
+                  <xs:element name="DIA" msprop:FriendlyName="DIA" msprop:DbColumnName="DIA" msprop:design-time-name="b99dbf3c-cf41-4dad-9361-974d1e7920e2" type="xs:short" />
+                  <xs:element name="DIASEMANA" msprop:FriendlyName="DIASEMANA" msprop:DbColumnName="DIASEMANA" msprop:design-time-name="b640cf3f-1849-415e-b343-e52b35e886d7" type="xs:short" />
+                  <xs:element name="NSEMESTRE" msprop:FriendlyName="NSEMESTRE" msprop:DbColumnName="NSEMESTRE" msprop:design-time-name="a3eeea01-6a4e-445d-9704-24d72d8c6d85">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NTRIMESTRE" msprop:FriendlyName="NTRIMESTRE" msprop:DbColumnName="NTRIMESTRE" msprop:design-time-name="38fa83b0-525d-4177-9995-b8c4809da4e5">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NMES" msprop:FriendlyName="NMES" msprop:DbColumnName="NMES" msprop:design-time-name="8521015c-4eff-4960-9d49-2badc5a202af">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NMES3L" msprop:FriendlyName="NMES3L" msprop:DbColumnName="NMES3L" msprop:design-time-name="ca02f055-110f-42ff-b134-91d9afedbd82">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NSEMANA" msprop:FriendlyName="NSEMANA" msprop:DbColumnName="NSEMANA" msprop:design-time-name="29146fe9-cf40-4284-ae2e-0a3f2a0ee960">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NDIA" msprop:FriendlyName="NDIA" msprop:DbColumnName="NDIA" msprop:design-time-name="a3a0459d-34ac-47da-a81e-50ceabe4348e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NDIASEMANA" msprop:FriendlyName="NDIASEMANA" msprop:DbColumnName="NDIASEMANA" msprop:design-time-name="debec693-ff14-4789-bc8d-ff181b278bb2">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_Dimension_Zona" />
+          <xs:field xpath="COD_ZONAKEY" />
+        </xs:unique>
+        <xs:unique name="DW_Dimension_Clasificador_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_Dimension_Clasificador" />
+          <xs:field xpath="COD_CLASIFICADORKEY" />
+        </xs:unique>
+        <xs:unique name="DW_Dimension_Codigo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_Dimension_Codigo" />
+          <xs:field xpath="COD_CODIGOKEY" />
+        </xs:unique>
+        <xs:unique name="DW_Dimension_Tiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_Dimension_Tiempo" />
+          <xs:field xpath="FECHAKEY" />
+        </xs:unique>
+        <xs:keyref name="FK_Hechos_COD_SUCKEY" refer="DW_Dimension_Clasificador_Constraint1">
+          <xs:selector xpath=".//DW_Hechos_Atencion" />
+          <xs:field xpath="COD_CLASIFICADORKEY" />
+        </xs:keyref>
+        <xs:keyref name="FK_Hechos_COD_IDKEY" refer="Constraint1">
+          <xs:selector xpath=".//DW_Hechos_Atencion" />
+          <xs:field xpath="COD_ZONAKEY" />
+        </xs:keyref>
+        <xs:keyref name="FK_Hechos_FECHAKEY" refer="DW_Dimension_Tiempo_Constraint1">
+          <xs:selector xpath=".//DW_Hechos_Atencion" />
+          <xs:field xpath="FECHAKEY" />
+        </xs:keyref>
+        <xs:keyref name="FK_Hechos_COD_PRODKEY" refer="DW_Dimension_Codigo_Constraint1">
+          <xs:selector xpath=".//DW_Hechos_Atencion" />
+          <xs:field xpath="COD_CODIGOKEY" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <DW2023 xmlns="" />
+  </Schema>
+</DataSourceView>
